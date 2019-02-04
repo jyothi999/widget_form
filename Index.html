@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="shortcut icon" href="res/tabIcon.ico" />
+    <title>News List-Widget</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <h1><center>Latest News Search</center></h1>
+    </header>
+    <div class="container">
+      <p class="auto_refresh">Auto refresh in:</p>
+      <section>
+        <div class="search-container">
+          <!-- The form -->
+          <form class="searchform" action="action_page.php">
+            <input type="text" placeholder="Search.." name="search" />
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </section>
+      <section class="news_grid">
+        <ul>
+          <li>
+            <div class="card">
+              <img
+                src="img_avatar.png"
+                alt="Avatar"
+                style="width:100%"
+                id="urlToImage"
+              />
+              <div class="infoContainer">
+                <h4 id="name"><b>John Doe</b></h4>
+                <h5 id="title"></h5>
+                <h6 id="publishedAt"></h6>
+                <p id="description">Architect & Engineer</p>
+                <a href="" id="url">Read More....</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="card">
+              <img
+                src="img_avatar.png"
+                alt="Avatar"
+                style="width:100%"
+                id="urlToImage"
+              />
+              <div class="infoContainer">
+                <h4 id="name"><b>John Doe</b></h4>
+                <h5 id="title"></h5>
+                <h6 id="publishedAt"></h6>
+                <p id="description">Architect & Engineer</p>
+                <a href="" id="url">Read More....</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+    <script src="js/Index.js"></script>
+  </body>
+</html>

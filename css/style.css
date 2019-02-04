@@ -1,0 +1,71 @@
+body {
+  background-color: palegreen;
+}
+h1 {
+  align-items: center;
+}
+.container {
+  background-color: white;
+}
+.auto_refresh {
+  text-align: -webkit-right;
+}
+* {
+  box-sizing: border-box;
+}
+.search-container {
+  padding-left: 10%;
+}
+/* Style the search field */
+form.searchform input[type="text"] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.searchform button {
+  float: left;
+  width: 5%;
+  padding: 10px;
+  background: greenyellow;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.searchform button:hover {
+  background: greenyellow;
+}
+
+/* Clear floats */
+form.searchform::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*News card CSS*/
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.infoContainer {
+  padding: 2px 16px;
+}
+#url {
+  margin-left: 80%;
+  cursor: pointer;
+}
