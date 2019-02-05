@@ -2,8 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width,height=device-height,initial-scale=1"
+    />
     <link rel="shortcut icon" href="res/tabIcon.ico" />
+    <!-- <meta http-equiv="refresh" content="30" /> -->
     <title>News List-Widget</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link
@@ -16,53 +20,22 @@
       <h1><center>Latest News Search</center></h1>
     </header>
     <div class="container">
-      <p class="auto_refresh">Auto refresh in:</p>
+      <p class="auto_refresh">
+        Auto-refresh in 30Sec: <span id="clock">0.00</span>
+      </p>
       <section>
         <div class="search-container">
           <!-- The form -->
-          <form class="searchform" action="action_page.php">
-            <input type="text" placeholder="Search.." name="search" />
-            <button type="submit"><i class="fa fa-search"></i></button>
+          <form class="searchform" action="Index.html">
+            <input type="text" id="searchInput" placeholder="Search.." name="search" />
+            <button type="submit" onclick="searchFunction()">
+              <i class="fa fa-search"></i>
+            </button>
           </form>
         </div>
       </section>
       <section class="news_grid">
-        <ul>
-          <li>
-            <div class="card">
-              <img
-                src="img_avatar.png"
-                alt="Avatar"
-                style="width:100%"
-                id="urlToImage"
-              />
-              <div class="infoContainer">
-                <h4 id="name"><b>John Doe</b></h4>
-                <h5 id="title"></h5>
-                <h6 id="publishedAt"></h6>
-                <p id="description">Architect & Engineer</p>
-                <a href="" id="url">Read More....</a>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="card">
-              <img
-                src="img_avatar.png"
-                alt="Avatar"
-                style="width:100%"
-                id="urlToImage"
-              />
-              <div class="infoContainer">
-                <h4 id="name"><b>John Doe</b></h4>
-                <h5 id="title"></h5>
-                <h6 id="publishedAt"></h6>
-                <p id="description">Architect & Engineer</p>
-                <a href="" id="url">Read More....</a>
-              </div>
-            </div>
-          </li>
-        </ul>
+        <ul id="newsEle"></ul>
       </section>
     </div>
     <script src="js/Index.js"></script>
